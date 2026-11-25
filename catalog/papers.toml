@@ -1,0 +1,594 @@
+# The papers of this hub, one [[paper]] per repository to be, grouped by family: the geometry of
+# spaces of phylogenetic trees and networks, their geodesics and convexity, statistics and
+# optimization in them, and tropical and information geometry.
+#
+# Started on 2026-11-25 from the maintainer's list for this hub. Authors, years, titles and links
+# were checked against Crossref. Each formalization records the exact citation in its Phase 0, and
+# corrects the entry here.
+#
+# Fields of a paper:
+#   id          the repository is lean4-<id>: the method's name in lower case when the paper names
+#               one, otherwise first author and year, with a keyword when two papers would share it
+#   family      the [[family]] it belongs to (each paper is in exactly one)
+#   order       its place in the family, by priority
+#   short       the method's name, when it has one
+#   kind        "theory" (a structural, limit or complexity theorem), "theory+algorithm", or
+#               "method"
+#   root        the Lean package, the root of its code and, by default, the paper's name: the
+#               method's name, otherwise first author and year (lean4-phylogenetics'
+#               docs/CONVENTIONS.md, Section 2)
+#   paper       optional: the paper's name, when it is not the root (CONVENTIONS, Section 2)
+#   status      "todo", "partial" (some results are formalized elsewhere: see covered_by),
+#               "in-progress" (its repository exists), or "formalized"
+#   repo        only when the repository is not named lean4-<id>, as for papers on one topic that
+#               share a repository (CONVENTIONS, Section 3)
+#   commit      for a formalized paper: the commit that other repositories require
+#   uses        other hubs whose library its formalization requires, besides this one
+#   builds_on   ids of papers, of any hub's catalog, whose results its proofs use. Only what is known
+#               before the paper's inventory; its Phase 1 completes the list here
+#   covered_by  what is already formalized, and where
+#   note        anything else
+
+[[family]]
+id = 1
+title = "Metric geometry and geodesic algorithms"
+priority = "highest"
+
+[[family]]
+id = 2
+title = "Statistical inference and optimization in tree spaces"
+
+[[family]]
+id = 3
+title = "Principal component analysis and dimensionality reduction"
+
+[[family]]
+id = 4
+title = "Tropical geometry and tropical statistics"
+priority = "highest"
+
+[[family]]
+id = 5
+title = "Information geometry and evolutionary probability spaces"
+
+[[family]]
+id = 6
+title = "Ranked trees and trees with different taxon sets"
+
+[[family]]
+id = 7
+title = "Discrete tree-space metrics and network geometry"
+
+# ---------------------------------------------------------------------------------------------
+# 1. Metric geometry and geodesic algorithms
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "billera2001"
+family = 1
+order = 1
+authors = "Billera, Holmes, Vogtmann"
+year = "2001"
+title = "Geometry of the Space of Phylogenetic Trees"
+url = "https://doi.org/10.1006/aama.2001.0759"
+kind = "theory"
+root = "Billera2001"
+status = "todo"
+
+[[paper]]
+id = "amenta2007"
+family = 1
+order = 2
+authors = "Amenta et al."
+year = "2007"
+title = "Approximating Geodesic Tree Distance"
+url = "https://doi.org/10.1016/j.ipl.2007.02.008"
+kind = "theory+algorithm"
+root = "Amenta2007"
+status = "todo"
+builds_on = ["billera2001"]
+
+[[paper]]
+id = "kupczok2008"
+family = 1
+order = 3
+authors = "Kupczok, von Haeseler, Klaere"
+year = "2008"
+title = "An Exact Algorithm for the Geodesic Distance Between Phylogenetic Trees"
+url = "https://doi.org/10.1089/cmb.2008.0068"
+kind = "theory+algorithm"
+root = "Kupczok2008"
+status = "todo"
+builds_on = ["billera2001"]
+
+[[paper]]
+id = "owen2011"
+family = 1
+order = 4
+authors = "Owen"
+year = "2011"
+title = "Computing Geodesic Distances in Tree Space"
+url = "https://doi.org/10.1137/090751396"
+kind = "theory+algorithm"
+root = "Owen2011"
+status = "todo"
+builds_on = ["billera2001"]
+
+[[paper]]
+id = "owen2011-fast"
+family = 1
+order = 5
+authors = "Owen, Provan"
+year = "2011"
+title = "A Fast Algorithm for Computing Geodesic Distances in Tree Space"
+url = "https://doi.org/10.1109/TCBB.2010.3"
+kind = "theory+algorithm"
+root = "Owen2011Fast"
+status = "todo"
+builds_on = ["billera2001"]
+
+[[paper]]
+id = "gavryushkin2016"
+family = 1
+order = 6
+authors = "Gavryushkin, Drummond"
+year = "2016"
+title = "The Space of Ultrametric Phylogenetic Trees"
+url = "https://doi.org/10.1016/j.jtbi.2016.05.001"
+kind = "theory+algorithm"
+root = "Gavryushkin2016"
+status = "todo"
+
+[[paper]]
+id = "lin2017"
+family = 1
+order = 7
+authors = "Lin, Sturmfels, Tang, Yoshida"
+year = "2017"
+title = "Convexity in Tree Spaces"
+url = "https://doi.org/10.1137/16M1079841"
+kind = "theory"
+root = "Lin2017"
+status = "todo"
+builds_on = ["billera2001"]
+
+# ---------------------------------------------------------------------------------------------
+# 2. Statistical inference and optimization in tree spaces
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "sturm2003"
+family = 2
+order = 1
+authors = "Sturm"
+year = "2003"
+title = "Probability Measures on Metric Spaces of Nonpositive Curvature"
+url = "https://doi.org/10.1090/conm/338/06080"
+kind = "theory"
+root = "Sturm2003"
+status = "todo"
+
+[[paper]]
+id = "barden2013"
+family = 2
+order = 2
+authors = "Barden, Le, Owen"
+year = "2013"
+title = "Central Limit Theorems for Fréchet Means in the Space of Phylogenetic Trees"
+url = "https://doi.org/10.1214/EJP.v18-2201"
+kind = "theory"
+root = "Barden2013"
+status = "todo"
+builds_on = ["billera2001"]
+
+[[paper]]
+id = "hotz2013"
+family = 2
+order = 3
+authors = "Hotz et al."
+year = "2013"
+title = "Sticky Central Limit Theorems on Open Books"
+url = "https://doi.org/10.1214/12-AAP899"
+kind = "theory"
+root = "Hotz2013"
+status = "todo"
+
+[[paper]]
+id = "bacak2014"
+family = 2
+order = 4
+authors = "Bačák"
+year = "2014"
+title = "Computing Medians and Means in Hadamard Spaces"
+url = "https://doi.org/10.1137/140953393"
+kind = "theory+algorithm"
+root = "Bacak2014"
+status = "todo"
+
+[[paper]]
+id = "benner2014"
+family = 2
+order = 5
+authors = "Benner et al."
+year = "2014"
+title = "Point Estimates in Phylogenetic Reconstructions"
+url = "https://doi.org/10.1093/bioinformatics/btu461"
+kind = "method"
+root = "Benner2014"
+status = "todo"
+
+[[paper]]
+id = "miller2015"
+family = 2
+order = 6
+authors = "Miller, Owen, Provan"
+year = "2015"
+title = "Polyhedral Computational Geometry for Averaging Metric Phylogenetic Trees"
+url = "https://doi.org/10.1016/j.aam.2015.04.002"
+kind = "theory+algorithm"
+root = "Miller2015"
+status = "todo"
+
+[[paper]]
+id = "barden2018"
+family = 2
+order = 7
+authors = "Barden, Le, Owen"
+year = "2018"
+title = "Limiting Behaviour of Fréchet Means in the Space of Phylogenetic Trees"
+url = "https://doi.org/10.1007/s10463-016-0582-9"
+kind = "theory"
+root = "Barden2018"
+status = "todo"
+builds_on = ["barden2013"]
+
+[[paper]]
+id = "willis2019"
+family = 2
+order = 8
+authors = "Willis"
+year = "2019"
+title = "Confidence Sets for Phylogenetic Trees"
+url = "https://doi.org/10.1080/01621459.2017.1395342"
+kind = "theory+algorithm"
+root = "Willis2019"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 3. Principal component analysis and dimensionality reduction
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "nye2011"
+family = 3
+order = 1
+authors = "Nye"
+year = "2011"
+title = "Principal Components Analysis in the Space of Phylogenetic Trees"
+url = "https://doi.org/10.1214/11-AOS915"
+kind = "theory+algorithm"
+root = "Nye2011"
+status = "todo"
+
+[[paper]]
+id = "feragen2013"
+family = 3
+order = 2
+authors = "Feragen et al."
+year = "2013"
+title = "Tree-Space Statistics and Approximations for Large-Scale Analysis of Anatomical Trees"
+url = "https://doi.org/10.1007/978-3-642-38868-2_7"
+kind = "method"
+root = "Feragen2013"
+status = "todo"
+note = "Its trees are anatomical (airway trees), in a tree space modelled on that of Billera, Holmes, Vogtmann: Information Processing in Medical Imaging (IPMI) 2013."
+
+[[paper]]
+id = "nye2014"
+family = 3
+order = 3
+authors = "Nye"
+year = "2014"
+title = "An Algorithm for Constructing Principal Geodesics in Phylogenetic Treespace"
+url = "https://doi.org/10.1109/TCBB.2014.2309599"
+kind = "method"
+root = "Nye2014"
+status = "todo"
+builds_on = ["nye2011"]
+
+[[paper]]
+id = "nye2017"
+family = 3
+order = 4
+authors = "Nye et al."
+year = "2017"
+title = "Principal Component Analysis and the Locus of the Fréchet Mean in the Space of Phylogenetic Trees"
+url = "https://doi.org/10.1093/biomet/asx047"
+kind = "theory+algorithm"
+root = "Nye2017"
+status = "todo"
+builds_on = ["nye2011"]
+
+# ---------------------------------------------------------------------------------------------
+# 4. Tropical geometry and tropical statistics
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "speyer2004"
+family = 4
+order = 1
+authors = "Speyer, Sturmfels"
+year = "2004"
+title = "The Tropical Grassmannian"
+url = "https://doi.org/10.1515/advg.2004.023"
+kind = "theory"
+root = "Speyer2004"
+status = "todo"
+
+[[paper]]
+id = "ardila2006"
+family = 4
+order = 2
+authors = "Ardila, Klivans"
+year = "2006"
+title = "The Bergman Complex of a Matroid and Phylogenetic Trees"
+url = "https://doi.org/10.1016/j.jctb.2005.06.004"
+kind = "theory"
+root = "Ardila2006"
+status = "todo"
+
+[[paper]]
+id = "lin2018"
+family = 4
+order = 3
+authors = "Lin, Yoshida"
+year = "2018"
+title = "Tropical Fermat–Weber Points"
+url = "https://doi.org/10.1137/16M1071122"
+kind = "theory+algorithm"
+root = "Lin2018"
+status = "todo"
+
+[[paper]]
+id = "yoshida2019"
+family = 4
+order = 4
+authors = "Yoshida, Zhang, Zhang"
+year = "2019"
+title = "Tropical Principal Component Analysis and Its Application to Phylogenetics"
+url = "https://doi.org/10.1007/s11538-018-0493-4"
+kind = "theory+algorithm"
+root = "Yoshida2019"
+status = "todo"
+
+[[paper]]
+id = "page2020"
+family = 4
+order = 5
+authors = "Page, Yoshida, Zhang"
+year = "2020"
+title = "Tropical Principal Component Analysis on the Space of Phylogenetic Trees"
+url = "https://doi.org/10.1093/bioinformatics/btaa564"
+kind = "theory+algorithm"
+root = "Page2020"
+status = "todo"
+builds_on = ["yoshida2019"]
+
+[[paper]]
+id = "comaneci2024"
+family = 4
+order = 6
+authors = "Comăneci, Joswig"
+year = "2024"
+title = "Tropical Medians by Transportation"
+url = "https://doi.org/10.1007/s10107-023-01996-8"
+kind = "theory+algorithm"
+root = "Comaneci2024"
+status = "todo"
+
+[[paper]]
+id = "bhatt2026"
+family = 4
+order = 7
+authors = "Bhatt et al."
+year = "2026"
+title = "Phylogenetics in a Warm Place: Computational Aspects of the Tropical Grassmannian"
+url = "https://doi.org/10.1007/s11538-026-01773-6"
+kind = "theory+algorithm"
+root = "Bhatt2026"
+status = "todo"
+builds_on = ["speyer2004"]
+
+# ---------------------------------------------------------------------------------------------
+# 5. Information geometry and evolutionary probability spaces
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "kim2000"
+family = 5
+order = 1
+authors = "Kim"
+year = "2000"
+title = "Slicing Hyperdimensional Oranges: The Geometry of Phylogenetic Estimation"
+url = "https://doi.org/10.1006/mpev.2000.0816"
+kind = "theory"
+root = "Kim2000"
+status = "todo"
+
+[[paper]]
+id = "moulton2004"
+family = 5
+order = 2
+authors = "Moulton, Steel"
+year = "2004"
+title = "Peeling Phylogenetic ‘Oranges’"
+url = "https://doi.org/10.1016/j.aam.2004.03.003"
+kind = "theory"
+root = "Moulton2004"
+status = "todo"
+builds_on = ["kim2000"]
+
+[[paper]]
+id = "garba2021"
+family = 5
+order = 3
+authors = "Garba, Nye, Lueg, Huckemann"
+year = "2021"
+title = "Information Geometry for Phylogenetic Trees"
+url = "https://doi.org/10.1007/s00285-021-01553-x"
+kind = "theory+algorithm"
+root = "Garba2021"
+status = "todo"
+
+[[paper]]
+id = "lueg2024"
+family = 5
+order = 4
+authors = "Lueg et al."
+year = "2024"
+title = "Foundations of the Wald Space for Phylogenetic Trees"
+url = "https://doi.org/10.1112/jlms.12893"
+kind = "theory+algorithm"
+root = "Lueg2024"
+status = "todo"
+builds_on = ["garba2021"]
+
+# ---------------------------------------------------------------------------------------------
+# 6. Ranked trees and trees with different taxon sets
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "grindstaff2019"
+family = 6
+order = 1
+authors = "Grindstaff, Owen"
+year = "2019"
+title = "Representations of Partial Leaf Sets in Phylogenetic Tree Space"
+url = "https://doi.org/10.1137/18M1235855"
+kind = "theory+algorithm"
+root = "Grindstaff2019"
+status = "todo"
+
+[[paper]]
+id = "collienne2021"
+family = 6
+order = 2
+authors = "Collienne, Gavryushkin"
+year = "2021"
+title = "Computing Nearest Neighbour Interchange Distances Between Ranked Phylogenetic Trees"
+url = "https://doi.org/10.1007/s00285-021-01567-5"
+kind = "theory+algorithm"
+root = "Collienne2021"
+status = "todo"
+
+[[paper]]
+id = "collienne2021-discrete"
+family = 6
+order = 3
+authors = "Collienne et al."
+year = "2021"
+title = "Discrete Coalescent Trees"
+url = "https://doi.org/10.1007/s00285-021-01685-0"
+kind = "theory+algorithm"
+root = "Collienne2021Discrete"
+status = "todo"
+
+[[paper]]
+id = "berling2024"
+family = 6
+order = 4
+authors = "Berling, Collienne, Gavryushkin"
+year = "2024"
+title = "Estimating the Mean in the Space of Ranked Phylogenetic Trees"
+url = "https://doi.org/10.1093/bioinformatics/btae514"
+kind = "theory+algorithm"
+root = "Berling2024"
+status = "todo"
+
+[[paper]]
+id = "valdezcabrera2025"
+family = 6
+order = 5
+authors = "Valdez-Cabrera, Willis"
+year = "2025"
+title = "Distances Between Extension Spaces of Phylogenetic Trees"
+url = "https://doi.org/10.1109/TCBBIO.2025.3526422"
+kind = "theory+algorithm"
+root = "ValdezCabrera2025"
+status = "todo"
+
+[[paper]]
+id = "valdezcabrera2026"
+family = 6
+order = 6
+authors = "Valdez-Cabrera, Willis"
+year = "2026"
+title = "Geometry of the Space of Phylogenetic Trees with Non-Identical Leaves"
+url = "https://doi.org/10.1016/j.aam.2026.103091"
+kind = "theory+algorithm"
+root = "ValdezCabrera2026"
+status = "todo"
+
+# ---------------------------------------------------------------------------------------------
+# 7. Discrete tree-space metrics and network geometry
+# ---------------------------------------------------------------------------------------------
+
+[[paper]]
+id = "robinson1971"
+family = 7
+order = 1
+authors = "Robinson"
+year = "1971"
+title = "Comparison of Labeled Trees with Valency Three"
+url = "https://doi.org/10.1016/0095-8956(71)90020-7"
+kind = "theory"
+root = "Robinson1971"
+status = "todo"
+
+[[paper]]
+id = "li1996"
+family = 7
+order = 2
+authors = "Li, Tromp, Zhang"
+year = "1996"
+title = "On the Nearest Neighbour Interchange Distance Between Evolutionary Trees"
+url = "https://doi.org/10.1006/jtbi.1996.0188"
+kind = "theory+algorithm"
+root = "Li1996"
+status = "todo"
+
+[[paper]]
+id = "allen2001"
+family = 7
+order = 3
+authors = "Allen, Steel"
+year = "2001"
+title = "Subtree Transfer Operations and Their Induced Metrics on Evolutionary Trees"
+url = "https://doi.org/10.1007/s00026-001-8006-8"
+kind = "theory"
+root = "Allen2001"
+status = "todo"
+
+[[paper]]
+id = "bordewich2005"
+family = 7
+order = 4
+authors = "Bordewich, Semple"
+year = "2005"
+title = "On the Computational Complexity of the Rooted Subtree Prune and Regraft Distance"
+url = "https://doi.org/10.1007/s00026-004-0229-z"
+kind = "theory"
+root = "Bordewich2005"
+status = "todo"
+
+[[paper]]
+id = "moulton2025"
+family = 7
+order = 5
+authors = "Moulton, Spillner"
+year = "2025"
+title = "Spaces of Ranked Tree-Child Networks"
+url = "https://doi.org/10.1007/s00285-025-02265-2"
+kind = "theory"
+root = "Moulton2025"
+status = "todo"
