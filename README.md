@@ -108,7 +108,7 @@ consistency in
 - [ ] Robinson (1971), [Comparison of Labeled Trees with Valency Three](https://doi.org/10.1016/0095-8956(71)90020-7)
 - [ ] Li, Tromp, Zhang (1996), [On the Nearest Neighbour Interchange Distance Between Evolutionary Trees](https://doi.org/10.1006/jtbi.1996.0188)
 - [ ] Allen, Steel (2001), [Subtree Transfer Operations and Their Induced Metrics on Evolutionary Trees](https://doi.org/10.1007/s00026-001-8006-8)
-- [ ] Bordewich, Semple (2005), [On the Computational Complexity of the Rooted Subtree Prune and Regraft Distance](https://doi.org/10.1007/s00026-004-0229-z)
+- [ ] Bordewich, Semple (2004), [On the Computational Complexity of the Rooted Subtree Prune and Regraft Distance](https://doi.org/10.1007/s00026-004-0229-z)
 - [ ] Moulton, Spillner (2025), [Spaces of Ranked Tree-Child Networks](https://doi.org/10.1007/s00285-025-02265-2)
 
 <!-- END catalog:papers -->
