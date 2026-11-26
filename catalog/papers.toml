@@ -254,6 +254,18 @@ kind = "theory+algorithm"
 root = "Willis2019"
 status = "todo"
 
+[[paper]]
+id = "evans2012"
+family = 2
+order = 9
+authors = "Evans, Matsen"
+year = "2012"
+title = "The Phylogenetic Kantorovich–Rubinstein Metric for Environmental Sequence Samples"
+url = "https://doi.org/10.1111/j.1467-9868.2011.01018.x"
+kind = "theory+algorithm"
+root = "Evans2012"
+status = "todo"
+
 # ---------------------------------------------------------------------------------------------
 # 3. Principal component analysis and dimensionality reduction
 # ---------------------------------------------------------------------------------------------

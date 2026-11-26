@@ -27,13 +27,13 @@ by the paper's own arguments, and an audit reports its errors and gaps.
 | Family | Papers | Formalized | In progress | Partly covered | To do |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | [1. Metric geometry and geodesic algorithms](#1-metric-geometry-and-geodesic-algorithms) | 7 | 0 | 0 | 0 | 7 |
-| [2. Statistical inference and optimization in tree spaces](#2-statistical-inference-and-optimization-in-tree-spaces) | 8 | 0 | 0 | 0 | 8 |
+| [2. Statistical inference and optimization in tree spaces](#2-statistical-inference-and-optimization-in-tree-spaces) | 9 | 0 | 0 | 0 | 9 |
 | [3. Principal component analysis and dimensionality reduction](#3-principal-component-analysis-and-dimensionality-reduction) | 4 | 0 | 0 | 0 | 4 |
 | [4. Tropical geometry and tropical statistics](#4-tropical-geometry-and-tropical-statistics) | 7 | 0 | 0 | 0 | 7 |
 | [5. Information geometry and evolutionary probability spaces](#5-information-geometry-and-evolutionary-probability-spaces) | 4 | 0 | 0 | 0 | 4 |
 | [6. Ranked trees and trees with different taxon sets](#6-ranked-trees-and-trees-with-different-taxon-sets) | 6 | 0 | 0 | 0 | 6 |
 | [7. Discrete tree-space metrics and network geometry](#7-discrete-tree-space-metrics-and-network-geometry) | 5 | 0 | 0 | 0 | 5 |
-| **All** | **41** | **0** | **0** | **0** | **41** |
+| **All** | **42** | **0** | **0** | **0** | **42** |
 
 <!-- END catalog:summary -->
 
@@ -69,6 +69,7 @@ consistency in
 - [ ] Miller, Owen, Provan (2015), [Polyhedral Computational Geometry for Averaging Metric Phylogenetic Trees](https://doi.org/10.1016/j.aam.2015.04.002)
 - [ ] Barden, Le, Owen (2018), [Limiting Behaviour of Fréchet Means in the Space of Phylogenetic Trees](https://doi.org/10.1007/s10463-016-0582-9)
 - [ ] Willis (2019), [Confidence Sets for Phylogenetic Trees](https://doi.org/10.1080/01621459.2017.1395342)
+- [ ] Evans, Matsen (2012), [The Phylogenetic Kantorovich–Rubinstein Metric for Environmental Sequence Samples](https://doi.org/10.1111/j.1467-9868.2011.01018.x)
 
 ### 3. Principal component analysis and dimensionality reduction
 
