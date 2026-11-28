@@ -2,15 +2,17 @@
 # spaces of phylogenetic trees and networks, their geodesics and convexity, statistics and
 # optimization in them, and tropical and information geometry.
 #
-# Started on 2026-11-25 from the maintainer's list for this hub. Authors, years, titles and links
-# were checked against Crossref. Each formalization records the exact citation in its Phase 0, and
+# Started on 2026-11-25 from the maintainer's list for this hub. The families, their papers and the
+# order of the papers in each, by year, are those of the maintainer's catalogue of the field
+# (2026-11-28). The citations of the entries made before it were checked against Crossref; the
+# others are the catalogue's. Each formalization records the exact citation in its Phase 0, and
 # corrects the entry here.
 #
 # Fields of a paper:
 #   id          the repository is lean4-<id>: the method's name in lower case when the paper names
 #               one, otherwise first author and year, with a keyword when two papers would share it
 #   family      the [[family]] it belongs to (each paper is in exactly one)
-#   order       its place in the family, by priority
+#   order       its place in the family, by year
 #   short       the method's name, when it has one
 #   kind        "theory" (a structural, limit or complexity theorem), "theory+algorithm", or
 #               "method"
@@ -102,28 +104,28 @@ status = "todo"
 builds_on = ["billera2001"]
 
 [[paper]]
-id = "owen2011"
-family = 1
-order = 4
-authors = "Owen"
-year = "2011"
-title = "Computing Geodesic Distances in Tree Space"
-url = "https://doi.org/10.1137/090751396"
-kind = "theory+algorithm"
-root = "Owen2011"
-status = "todo"
-builds_on = ["billera2001"]
-
-[[paper]]
 id = "owen2011-fast"
 family = 1
-order = 5
+order = 4
 authors = "Owen, Provan"
 year = "2011"
 title = "A Fast Algorithm for Computing Geodesic Distances in Tree Space"
 url = "https://doi.org/10.1109/TCBB.2010.3"
 kind = "theory+algorithm"
 root = "Owen2011Fast"
+status = "todo"
+builds_on = ["billera2001"]
+
+[[paper]]
+id = "owen2011"
+family = 1
+order = 5
+authors = "Owen"
+year = "2011"
+title = "Computing Geodesic Distances in Tree Space"
+url = "https://doi.org/10.1137/090751396"
+kind = "theory+algorithm"
+root = "Owen2011"
 status = "todo"
 builds_on = ["billera2001"]
 
@@ -255,15 +257,51 @@ root = "Willis2019"
 status = "todo"
 
 [[paper]]
-id = "evans2012"
+id = "takazawa2022"
 family = 2
 order = 9
-authors = "Evans, Matsen"
-year = "2012"
-title = "The Phylogenetic Kantorovich–Rubinstein Metric for Environmental Sequence Samples"
-url = "https://doi.org/10.1111/j.1467-9868.2011.01018.x"
+authors = "Takazawa, Sei"
+year = "2022"
+title = "Maximum Likelihood Estimation of Log-Concave Densities on Tree Space"
+url = "https://arxiv.org/abs/2211.12037"
 kind = "theory+algorithm"
-root = "Evans2012"
+root = "Takazawa2022"
+status = "todo"
+
+[[paper]]
+id = "smith2022"
+family = 2
+order = 10
+authors = "Smith"
+year = "2022"
+title = "Robust Analysis of Phylogenetic Tree Space"
+url = "https://doi.org/10.1093/sysbio/syab100"
+kind = "theory+algorithm"
+root = "Smith2022"
+status = "todo"
+
+[[paper]]
+id = "penn2023"
+family = 2
+order = 11
+authors = "Penn et al."
+year = "2023"
+title = "Leaping through Tree Space: Continuous Phylogenetic Inference for Rooted and Unrooted Trees"
+url = "https://doi.org/10.1093/gbe/evad213"
+kind = "theory+algorithm"
+root = "Penn2023"
+status = "todo"
+
+[[paper]]
+id = "woodman2025"
+family = 2
+order = 12
+authors = "Woodman, Nye"
+year = "2025"
+title = "Brownian motion, bridges and Bayesian inference in phylogenetic tree space"
+url = "https://arxiv.org/abs/2506.22135"
+kind = "theory+algorithm"
+root = "Woodman2025"
 status = "todo"
 
 # ---------------------------------------------------------------------------------------------
@@ -410,6 +448,18 @@ kind = "theory+algorithm"
 root = "Bhatt2026"
 status = "todo"
 builds_on = ["speyer2004"]
+
+[[paper]]
+id = "monod2026"
+family = 4
+order = 8
+authors = "Monod et al."
+year = "2026"
+title = "Tropical Geometry of Phylogenetic Tree Space: A statistical Perspective"
+url = "https://doi.org/10.1007/s10013-026-00795-w"
+kind = "theory"
+root = "Monod2026"
+status = "todo"
 
 # ---------------------------------------------------------------------------------------------
 # 5. Information geometry and evolutionary probability spaces
@@ -558,9 +608,34 @@ root = "Robinson1971"
 status = "todo"
 
 [[paper]]
-id = "li1996"
+id = "robinson1981"
 family = 7
 order = 2
+authors = "Robinson, Foulds"
+year = "1981"
+title = "Comparison of Phylogenetic Trees"
+url = "https://doi.org/10.1016/0025-5564(81)90043-2"
+kind = "theory"
+root = "Robinson1981"
+status = "todo"
+note = "A foundation of the collection: its reusable results go to lean4-phylogenetics, and the paper's repository formalizes the rest (docs/CONVENTIONS.md, Section 4)"
+
+[[paper]]
+id = "hein1996"
+family = 7
+order = 3
+authors = "Hein et al."
+year = "1996"
+title = "On the Complexity of Comparing Evolutionary Trees"
+url = "https://doi.org/10.1016/s0166-218x(96)00062-5"
+kind = "theory"
+root = "Hein1996"
+status = "todo"
+
+[[paper]]
+id = "li1996"
+family = 7
+order = 4
 authors = "Li, Tromp, Zhang"
 year = "1996"
 title = "On the Nearest Neighbour Interchange Distance Between Evolutionary Trees"
@@ -570,9 +645,21 @@ root = "Li1996"
 status = "todo"
 
 [[paper]]
+id = "rodrigues2001"
+family = 7
+order = 5
+authors = "Rodrigues, Sagot, Wakabayashi"
+year = "2001"
+title = "Some Approximation Results for the Maximum Agreement Forest Problem"
+url = "https://doi.org/10.1007/3-540-44666-4_19"
+kind = "theory+algorithm"
+root = "Rodrigues2001"
+status = "todo"
+
+[[paper]]
 id = "allen2001"
 family = 7
-order = 3
+order = 6
 authors = "Allen, Steel"
 year = "2001"
 title = "Subtree Transfer Operations and Their Induced Metrics on Evolutionary Trees"
@@ -582,9 +669,69 @@ root = "Allen2001"
 status = "todo"
 
 [[paper]]
+id = "nakhleh2003"
+family = 7
+order = 7
+authors = "Nakhleh et al."
+year = "2003"
+title = "Towards the development of computational tools for evaluating phylogenetic network reconstruction methods."
+url = "https://doi.org/10.1142/9789812776303_0030"
+kind = "method"
+root = "Nakhleh2003"
+status = "todo"
+
+[[paper]]
+id = "choy2004"
+family = 7
+order = 8
+authors = "Choy et al."
+year = "2004"
+title = "Computing the Maximum Agreement of Phylogenetic Networks"
+url = "https://doi.org/10.1016/j.entcs.2003.12.009"
+kind = "theory+algorithm"
+root = "Choy2004"
+status = "todo"
+
+[[paper]]
+id = "christiansen2005"
+family = 7
+order = 9
+authors = "Christiansen et al."
+year = "2005"
+title = "Algorithms for Computing the Quartet Distance between Trees of Arbitrary Degree"
+url = "https://www.semanticscholar.org/paper/d088ceaed7e75bb22c57302eba13dca1ce1f199b"
+kind = "theory+algorithm"
+root = "Christiansen2005"
+status = "todo"
+
+[[paper]]
+id = "chataigner2005"
+family = 7
+order = 10
+authors = "Chataigner"
+year = "2005"
+title = "Approximating the Maximum Agreement Forest on k trees"
+url = "https://doi.org/10.1016/j.ipl.2004.11.004"
+kind = "theory+algorithm"
+root = "Chataigner2005"
+status = "todo"
+
+[[paper]]
+id = "nguyen2005"
+family = 7
+order = 11
+authors = "Nguyen, Nguyen, Sung"
+year = "2005"
+title = "Fast algorithms for computing the tripartition-based distance between phylogenetic networks"
+url = "https://doi.org/10.1007/s10878-006-9025-5"
+kind = "theory+algorithm"
+root = "Nguyen2005"
+status = "todo"
+
+[[paper]]
 id = "bordewich2005"
 family = 7
-order = 4
+order = 12
 authors = "Bordewich, Semple"
 year = "2004"
 title = "On the Computational Complexity of the Rooted Subtree Prune and Regraft Distance"
@@ -594,13 +741,733 @@ root = "Bordewich2005"
 status = "todo"
 
 [[paper]]
+id = "rodrigues2007"
+family = 7
+order = 13
+authors = "Rodrigues, Sagot, Wakabayashi"
+year = "2007"
+title = "The maximum agreement forest problem: Approximation algorithms and computational experiments"
+url = "https://doi.org/10.1016/j.tcs.2006.12.011"
+kind = "theory+algorithm"
+root = "Rodrigues2007"
+status = "todo"
+
+[[paper]]
+id = "cardona2008-distance"
+family = 7
+order = 14
+authors = "Cardona et al."
+year = "2008"
+title = "A distance metric for a class of tree-sibling phylogenetic networks"
+url = "https://doi.org/10.1093/bioinformatics/btn231"
+kind = "theory+algorithm"
+root = "Cardona2008Distance"
+status = "todo"
+
+[[paper]]
+id = "mailund2009"
+family = 7
+order = 15
+authors = "Mailund, Nielsen, Pedersen"
+year = "2009"
+title = "A Quadratic Time Algorithm for Computing the Quartet Distance between Two General Trees"
+url = "https://doi.org/10.1109/ijcbs.2009.42"
+kind = "theory+algorithm"
+root = "Mailund2009"
+status = "todo"
+
+[[paper]]
+id = "cardona2009-comparison"
+family = 7
+order = 16
+authors = "Cardona, Rossello, Valiente"
+year = "2009"
+title = "Comparison of Tree-Child Phylogenetic Networks"
+url = "https://doi.org/10.1109/tcbb.2007.70270"
+kind = "theory+algorithm"
+root = "Cardona2009Comparison"
+status = "todo"
+
+[[paper]]
+id = "cardona2009-metrics1"
+family = 7
+order = 17
+authors = "Cardona et al."
+year = "2009"
+title = "Metrics for Phylogenetic Networks I: Generalizations of the Robinson-Foulds Metric"
+url = "https://doi.org/10.1109/tcbb.2008.70"
+kind = "theory+algorithm"
+root = "Cardona2009Metrics1"
+status = "todo"
+
+[[paper]]
+id = "cardona2009-metrics2"
+family = 7
+order = 18
+authors = "Cardona et al."
+year = "2009"
+title = "Metrics for Phylogenetic Networks II: Nodal and Triplets Metrics"
+url = "https://doi.org/10.1109/tcbb.2008.127"
+kind = "theory+algorithm"
+root = "Cardona2009Metrics2"
+status = "todo"
+
+[[paper]]
+id = "nakhleh2010"
+family = 7
+order = 19
+authors = "Nakhleh"
+year = "2010"
+title = "A Metric on the Space of Reduced Phylogenetic Networks"
+url = "https://doi.org/10.1109/tcbb.2009.2"
+kind = "theory+algorithm"
+root = "Nakhleh2010"
+status = "todo"
+
+[[paper]]
+id = "cardona2010"
+family = 7
+order = 20
+authors = "Cardona, Llabrés, Rosselló"
+year = "2010"
+title = "Two Results on Distances for Phylogenetic Networks"
+url = "https://doi.org/10.1007/978-3-642-13214-8_12"
+kind = "theory+algorithm"
+root = "Cardona2010"
+status = "todo"
+
+[[paper]]
+id = "nielsen2011"
+family = 7
+order = 21
+authors = "Nielsen et al."
+year = "2011"
+title = "A sub-cubic time algorithm for computing the quartet distance between two general trees"
+url = "https://doi.org/10.1186/1748-7188-6-15"
+kind = "theory+algorithm"
+root = "Nielsen2011"
+status = "todo"
+
+[[paper]]
+id = "crosby2012"
+family = 7
+order = 22
+authors = "Crosby, Williams"
+year = "2012"
+title = "A Fast Algorithm for Computing the Quartet Distance for Large Sets of Evolutionary Trees"
+url = "https://doi.org/10.1007/978-3-642-30191-9_6"
+kind = "theory+algorithm"
+root = "Crosby2012"
+status = "todo"
+
+[[paper]]
+id = "jansson2012-computing"
+family = 7
+order = 23
+authors = "Jansson, Lingas"
+year = "2012"
+title = "Computing the Rooted Triplet Distance between Galled Trees by Counting Triangles"
+url = "https://doi.org/10.1007/978-3-642-31265-6_31"
+kind = "theory+algorithm"
+root = "Jansson2012Computing"
+status = "todo"
+
+[[paper]]
+id = "asano2012"
+family = 7
+order = 24
+authors = "Asano et al."
+year = "2012"
+title = "Faster computation of the Robinson–Foulds distance between phylogenetic networks"
+url = "https://doi.org/10.1016/j.ins.2012.01.038"
+kind = "theory+algorithm"
+root = "Asano2012"
+status = "todo"
+
+[[paper]]
+id = "sand2013"
+family = 7
+order = 25
+authors = "Sand et al."
+year = "2013"
+title = "Algorithms for Computing the Triplet Quartet Distances for Binary General Trees"
+url = "https://doi.org/10.3390/biology2041189"
+kind = "theory+algorithm"
+root = "Sand2013"
+status = "todo"
+
+[[paper]]
+id = "brodal2013"
+family = 7
+order = 26
+authors = "Brodal et al."
+year = "2013"
+title = "Efficient algorithms for computing the triplet and quartet distance between trees of arbitrary degree"
+url = "https://doi.org/10.1137/1.9781611973105.130"
+kind = "theory+algorithm"
+root = "Brodal2013"
+status = "todo"
+
+[[paper]]
+id = "whidden2013"
+family = 7
+order = 27
+authors = "Whidden, Beiko, Zeh"
+year = "2013"
+title = "Fixed-Parameter Algorithms for Maximum Agreement Forests"
+url = "https://doi.org/10.1137/110845045"
+kind = "theory+algorithm"
+root = "Whidden2013"
+status = "todo"
+
+[[paper]]
+id = "shi2014-parameterized"
+family = 7
+order = 28
+authors = "Shi et al."
+year = "2014"
+title = "Algorithms for parameterized maximum agreement forest problem on multiple trees"
+url = "https://doi.org/10.1016/j.tcs.2013.12.025"
+kind = "theory+algorithm"
+root = "Shi2014Parameterized"
+status = "todo"
+
+[[paper]]
+id = "shi2014-approximation"
+family = 7
+order = 29
+authors = "Shi et al."
+year = "2014"
+title = "Approximation Algorithms for Maximum Agreement Forest on Multiple Trees"
+url = "https://doi.org/10.1007/978-3-319-08783-2_33"
+kind = "theory+algorithm"
+root = "Shi2014Approximation"
+status = "todo"
+
+[[paper]]
+id = "cardona2014"
+family = 7
+order = 30
+authors = "Cardona et al."
+year = "2014"
+title = "The Comparison of Tree-Sibling Time Consistent Phylogenetic Networks Is Graph Isomorphism-Complete"
+url = "https://doi.org/10.1155/2014/254279"
+kind = "theory"
+root = "Cardona2014"
+status = "todo"
+
+[[paper]]
+id = "olver2015"
+family = 7
+order = 31
+authors = "Olver et al."
+year = "2015"
+title = "A duality based 2-approximation algorithm for maximum agreement forest"
+url = "https://doi.org/10.1007/s10107-022-01790-y"
+kind = "theory+algorithm"
+root = "Olver2015"
+status = "todo"
+
+[[paper]]
+id = "whidden2015-fixedparameter"
+family = 7
+order = 32
+authors = "Whidden, Beiko, Zeh"
+year = "2015"
+title = "Fixed-Parameter and Approximation Algorithms for Maximum Agreement Forests of Multifurcating Trees"
+url = "https://doi.org/10.1007/s00453-015-9983-z"
+kind = "theory+algorithm"
+root = "Whidden2015Fixedparameter"
+status = "todo"
+
+[[paper]]
+id = "chen2015"
+family = 7
+order = 33
+authors = "Chen, Fan, Sze"
+year = "2015"
+title = "Parameterized and approximation algorithms for maximum agreement forest in multifurcating trees"
+url = "https://doi.org/10.1016/j.tcs.2014.10.031"
+kind = "theory+algorithm"
+root = "Chen2015"
+status = "todo"
+
+[[paper]]
+id = "huber2015-spaces"
+family = 7
+order = 34
+authors = "Huber et al."
+year = "2015"
+title = "Spaces of phylogenetic networks from generalized nearest-neighbor interchange operations"
+url = "https://doi.org/10.1007/s00285-015-0899-7"
+kind = "theory"
+root = "Huber2015Spaces"
+status = "todo"
+
+[[paper]]
+id = "shi2016"
+family = 7
+order = 35
+authors = "Shi et al."
+year = "2016"
+title = "Improved approximation algorithm for maximum agreement forest of two rooted binary phylogenetic trees"
+url = "https://doi.org/10.1007/s10878-015-9921-7"
+kind = "theory+algorithm"
+root = "Shi2016"
+status = "todo"
+
+[[paper]]
+id = "fischer2016"
+family = 7
+order = 36
+authors = "Fischer, Kelk"
+year = "2016"
+title = "On the Maximum Parsimony Distance Between Phylogenetic Trees"
+url = "https://doi.org/10.1007/s00026-015-0298-1"
+kind = "theory"
+root = "Fischer2016"
+status = "todo"
+
+[[paper]]
+id = "alon2016"
+family = 7
+order = 37
+authors = "Alon, Naves, Sudakov"
+year = "2016"
+title = "On the Maximum Quartet Distance between Phylogenetic Trees"
+url = "https://doi.org/10.1137/15m1041754"
+kind = "theory"
+root = "Alon2016"
+status = "todo"
+
+[[paper]]
+id = "kelk2016"
+family = 7
+order = 38
+authors = "Kelk et al."
+year = "2016"
+title = "Reduction rules for the maximum parsimony distance on phylogenetic trees"
+url = "https://doi.org/10.1016/j.tcs.2016.07.010"
+kind = "theory"
+root = "Kelk2016"
+status = "todo"
+
+[[paper]]
+id = "huber2016"
+family = 7
+order = 39
+authors = "Huber, Moulton, Wu"
+year = "2016"
+title = "Transforming phylogenetic networks: Moving beyond tree space"
+url = "https://doi.org/10.1016/j.jtbi.2016.05.030"
+kind = "theory"
+root = "Huber2016"
+status = "todo"
+
+[[paper]]
+id = "moulton2017"
+family = 7
+order = 40
+authors = "Moulton, Oldman, Wu"
+year = "2017"
+title = "A cubic-time algorithm for computing the trinet distance between level-1 networks"
+url = "https://doi.org/10.1016/j.ipl.2017.03.002"
+kind = "theory+algorithm"
+root = "Moulton2017"
+status = "todo"
+
+[[paper]]
+id = "jansson2017"
+family = 7
+order = 41
+authors = "Jansson, Rajaby"
+year = "2017"
+title = "A More Practical Algorithm for the Rooted Triplet Distance"
+url = "https://doi.org/10.1089/cmb.2016.0185"
+kind = "theory+algorithm"
+root = "Jansson2017"
+status = "todo"
+
+[[paper]]
+id = "bordewich2017-lost"
+family = 7
+order = 42
+authors = "Bordewich, Linz, Semple"
+year = "2017"
+title = "Lost in space? Generalising subtree prune and regraft to spaces of phylogenetic networks"
+url = "https://doi.org/10.1016/j.jtbi.2017.03.032"
+kind = "theory"
+root = "Bordewich2017Lost"
+status = "todo"
+
+[[paper]]
+id = "gambette2017-rearrangement"
+family = 7
+order = 43
+authors = "Gambette et al."
+year = "2017"
+title = "Rearrangement moves on rooted phylogenetic networks"
+url = "https://doi.org/10.1371/journal.pcbi.1005611"
+kind = "theory"
+root = "Gambette2017Rearrangement"
+status = "todo"
+
+[[paper]]
+id = "gambette2017-uprooted"
+family = 7
+order = 44
+authors = "Gambette, Huber, Scholz"
+year = "2017"
+title = "Uprooted Phylogenetic Networks"
+url = "https://doi.org/10.1007/s11538-017-0318-x"
+kind = "theory"
+root = "Gambette2017Uprooted"
+status = "todo"
+
+[[paper]]
+id = "shi2018"
+family = 7
+order = 45
+authors = "Shi et al."
+year = "2018"
+title = "A parameterized algorithm for the Maximum Agreement Forest problem on multiple rooted multifurcating trees"
+url = "https://doi.org/10.1016/j.jcss.2018.03.002"
+kind = "theory+algorithm"
+root = "Shi2018"
+status = "todo"
+
+[[paper]]
+id = "francis2018-bounds"
+family = 7
+order = 46
+authors = "Francis et al."
+year = "2018"
+title = "Bounds for phylogenetic network space metrics"
+url = "https://doi.org/10.1007/s00285-017-1171-0"
+kind = "theory"
+root = "Francis2018Bounds"
+status = "todo"
+
+[[paper]]
+id = "janssen2018-exploring"
+family = 7
+order = 47
+authors = "Janssen et al."
+year = "2018"
+title = "Exploring the Tiers of Rooted Phylogenetic Network Space Using Tail Moves"
+url = "https://doi.org/10.1007/s11538-018-0452-0"
+kind = "theory"
+root = "Janssen2018Exploring"
+status = "todo"
+
+[[paper]]
+id = "klawitter2018"
+family = 7
+order = 48
+authors = "Klawitter"
+year = "2018"
+title = "The SNPR neighbourhood of tree-child networks"
+url = "https://doi.org/10.7155/jgaa.00472"
+kind = "theory+algorithm"
+root = "Klawitter2018"
+status = "todo"
+
+[[paper]]
+id = "janssen2019"
+family = 7
+order = 49
+authors = "Janssen"
+year = "2019"
+title = "Rearrangement operations on unrooted phylogenetic networks"
+url = "https://doi.org/10.20429/tag.2019.060206"
+kind = "theory"
+root = "Janssen2019"
+status = "todo"
+
+[[paper]]
+id = "lafond2019-complexity"
+family = 7
+order = 50
+authors = "Lafond et al."
+year = "2019"
+title = "The complexity of comparing multiply-labelled trees by extending phylogenetic-tree metrics"
+url = "https://doi.org/10.1016/j.tcs.2018.08.006"
+kind = "theory"
+root = "Lafond2019Complexity"
+status = "todo"
+
+[[paper]]
+id = "forcey2020-galois"
+family = 7
+order = 51
+authors = "Forcey, Scalzo"
+year = "2020"
+title = "Galois connections for phylogenetic networks and their polytopes"
+url = "https://doi.org/10.1007/s10801-020-00974-z"
+kind = "theory"
+root = "Forcey2020Galois"
+status = "todo"
+
+[[paper]]
+id = "fischer2020-treebased"
+family = 7
+order = 52
+authors = "Fischer, Francis"
+year = "2020"
+title = "How tree-based is my network? Proximity measures for unrooted phylogenetic networks"
+url = "https://doi.org/10.1016/j.dam.2019.12.019"
+kind = "theory+algorithm"
+root = "Fischer2020Treebased"
+status = "todo"
+
+[[paper]]
+id = "yamada2020"
+family = 7
+order = 53
+authors = "Yamada, Chen, Wang"
+year = "2020"
+title = "Improved Practical Algorithms for Rooted Subtree Prune and Regraft (rSPR) Distance and Hybridization Number"
+url = "https://doi.org/10.1089/cmb.2019.0432"
+kind = "theory+algorithm"
+root = "Yamada2020"
+status = "todo"
+
+[[paper]]
+id = "durell2020"
+family = 7
+order = 54
+authors = "Durell, Forcey"
+year = "2020"
+title = "Level-1 phylogenetic networks and their balanced minimum evolution polytopes"
+url = "https://doi.org/10.1007/s00285-019-01458-w"
+kind = "theory"
+root = "Durell2020"
+status = "todo"
+
+[[paper]]
+id = "forcey2020-networks"
+family = 7
+order = 55
+authors = "Forcey, Scalzo"
+year = "2020"
+title = "Phylogenetic Networks as Circuits With Resistance Distance"
+url = "https://doi.org/10.3389/fgene.2020.586664"
+kind = "theory+algorithm"
+root = "Forcey2020Networks"
+status = "todo"
+
+[[paper]]
+id = "adams2020"
+family = 7
+order = 56
+authors = "Adams, Castoe"
+year = "2020"
+title = "Probabilistic Species Tree Distances: Implementing the Multispecies Coalescent to Compare Species Trees Within the Same Model-Based Framework Used to Estimate Them"
+url = "https://doi.org/10.1093/sysbio/syz031"
+kind = "method"
+root = "Adams2020"
+status = "todo"
+
+[[paper]]
+id = "klawitter2020"
+family = 7
+order = 57
+authors = "Klawitter"
+year = "2020"
+title = "The agreement distance of unrooted phylogenetic networks"
+url = "https://doi.org/10.23638/dmtcs-22-1-22"
+kind = "theory"
+root = "Klawitter2020"
+status = "todo"
+
+[[paper]]
+id = "fischer2020-space"
+family = 7
+order = 58
+authors = "Fischer, Francis"
+year = "2020"
+title = "The Space of Tree-Based Phylogenetic Networks"
+url = "https://doi.org/10.1007/s11538-020-00744-9"
+kind = "theory"
+root = "Fischer2020Space"
+status = "todo"
+
+[[paper]]
+id = "jansson2021"
+family = 7
+order = 59
+authors = "Jansson et al."
+year = "2021"
+title = "Computing the Rooted Triplet Distance Between Phylogenetic Networks"
+url = "https://doi.org/10.1007/s00453-021-00802-1"
+kind = "theory+algorithm"
+root = "Jansson2021"
+status = "todo"
+
+[[paper]]
+id = "janssen2021"
+family = 7
+order = 60
+authors = "Janssen"
+year = "2021"
+title = "Heading in the right direction? Using head moves to traverse phylogenetic network space"
+url = "https://doi.org/10.7155/jgaa.00559"
+kind = "theory"
+root = "Janssen2021"
+status = "todo"
+
+[[paper]]
+id = "jones2021"
+family = 7
+order = 61
+authors = "Jones, Kelk, Stougie"
+year = "2021"
+title = "Maximum parsimony distance on phylogenetic trees: A linear kernel and constant factor approximation algorithm"
+url = "https://doi.org/10.1016/j.jcss.2020.10.003"
+kind = "theory+algorithm"
+root = "Jones2021"
+status = "todo"
+
+[[paper]]
+id = "yakici2022"
+family = 7
+order = 62
+authors = "Yakici, Ogilvie, Nakhleh"
+year = "2022"
+title = "Phylogenetic Network Dissimilarity Measures That Take Branch Lengths Into Account"
+url = "https://doi.org/10.1101/2022.02.22.481483"
+kind = "theory+algorithm"
+root = "Yakici2022"
+status = "todo"
+
+[[paper]]
+id = "kelk2023"
+family = 7
+order = 63
+authors = "Kelk, Meuwese"
+year = "2023"
+title = "Agreement forests of caterpillar trees: complexity, kernelization and branching"
+url = "https://arxiv.org/abs/2307.12176"
+kind = "theory+algorithm"
+root = "Kelk2023"
+status = "todo"
+
+[[paper]]
+id = "landry2023"
+family = 7
+order = 64
+authors = "Landry et al."
+year = "2023"
+title = "Defining Phylogenetic Network Distances Using Cherry Operations"
+url = "https://doi.org/10.1109/tcbb.2022.3162991"
+kind = "theory+algorithm"
+root = "Landry2023"
+status = "todo"
+
+[[paper]]
+id = "linz2023"
+family = 7
+order = 65
+authors = "Linz, Wicke"
+year = "2023"
+title = "Exploring spaces of semi-directed phylogenetic networks"
+url = "https://arxiv.org/abs/2301.10818"
+kind = "theory"
+root = "Linz2023"
+status = "todo"
+
+[[paper]]
+id = "landry2024"
+family = 7
+order = 66
+authors = "Landry, Tremblay-savard, Lafond"
+year = "2024"
+title = "A Fixed-Parameter Tractable Algorithm for Finding Agreement Cherry-Reduced Subnetworks in Level-1 Orchard Networks"
+url = "https://doi.org/10.1089/cmb.2023.0317"
+kind = "theory+algorithm"
+root = "Landry2024"
+status = "todo"
+
+[[paper]]
+id = "rutecka2024"
+family = 7
+order = 67
+authors = "Rutecka et al."
+year = "2024"
+title = "Robinson-Foulds distance between phylogenetic networks and gene trees"
+url = "https://doi.org/10.1145/3698587.3701349"
+kind = "theory+algorithm"
+root = "Rutecka2024"
+status = "todo"
+
+[[paper]]
+id = "mestel2024"
+family = 7
+order = 68
+authors = "Mestel et al."
+year = "2024"
+title = "Split-or-decompose: Improved FPT branching algorithms for maximum agreement forests"
+url = "https://arxiv.org/abs/2409.18634"
+kind = "theory+algorithm"
+root = "Mestel2024"
+status = "todo"
+
+[[paper]]
 id = "moulton2025"
 family = 7
-order = 5
+order = 69
 authors = "Moulton, Spillner"
 year = "2025"
 title = "Spaces of Ranked Tree-Child Networks"
 url = "https://doi.org/10.1007/s00285-025-02265-2"
 kind = "theory"
 root = "Moulton2025"
+status = "todo"
+
+[[paper]]
+id = "ribas2026"
+family = 7
+order = 70
+authors = "Ribas, Pons, Ané"
+year = "2026"
+title = "A μ-Distance for Semidirected Orchard Phylogenetic Networks"
+url = "https://arxiv.org/abs/2605.06243"
+kind = "theory"
+root = "Ribas2026"
+status = "todo"
+
+[[paper]]
+id = "kelk2026"
+family = 7
+order = 71
+authors = "Kelk, Van Iersel, Meuwese"
+year = "2026"
+title = "A Kernel for the Maximum Agreement Forest Problem on Multiple Binary Phylogenetic Trees"
+url = "https://doi.org/10.7155/jgaa.v30i1.3194"
+kind = "theory+algorithm"
+root = "Kelk2026"
+status = "todo"
+
+[[paper]]
+id = "li2026"
+family = 7
+order = 72
+authors = "Li, Liu, Long"
+year = "2026"
+title = "Computing the Arc-Deletion Distance to Orchard Networks is NP-hard"
+url = "https://arxiv.org/abs/2605.19962"
+kind = "theory"
+root = "Li2026"
+status = "todo"
+
+[[paper]]
+id = "reichling2026"
+family = 7
+order = 73
+authors = "Reichling, van Iersel, Murakami"
+year = "2026"
+title = "Metrics for classes of semi-binary phylogenetic networks using μ-representations"
+url = "https://doi.org/10.1016/j.aam.2025.102953"
+kind = "theory+algorithm"
+root = "Reichling2026"
 status = "todo"

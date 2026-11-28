@@ -27,13 +27,13 @@ by the paper's own arguments, and an audit reports its errors and gaps.
 | Family | Papers | Formalized | In progress | Partly covered | To do |
 | --- | ---: | ---: | ---: | ---: | ---: |
 | [1. Metric geometry and geodesic algorithms](#1-metric-geometry-and-geodesic-algorithms) | 7 | 0 | 0 | 0 | 7 |
-| [2. Statistical inference and optimization in tree spaces](#2-statistical-inference-and-optimization-in-tree-spaces) | 9 | 0 | 0 | 0 | 9 |
+| [2. Statistical inference and optimization in tree spaces](#2-statistical-inference-and-optimization-in-tree-spaces) | 12 | 0 | 0 | 0 | 12 |
 | [3. Principal component analysis and dimensionality reduction](#3-principal-component-analysis-and-dimensionality-reduction) | 4 | 0 | 0 | 0 | 4 |
-| [4. Tropical geometry and tropical statistics](#4-tropical-geometry-and-tropical-statistics) | 7 | 0 | 0 | 0 | 7 |
+| [4. Tropical geometry and tropical statistics](#4-tropical-geometry-and-tropical-statistics) | 8 | 0 | 0 | 0 | 8 |
 | [5. Information geometry and evolutionary probability spaces](#5-information-geometry-and-evolutionary-probability-spaces) | 4 | 0 | 0 | 0 | 4 |
 | [6. Ranked trees and trees with different taxon sets](#6-ranked-trees-and-trees-with-different-taxon-sets) | 6 | 0 | 0 | 0 | 6 |
-| [7. Discrete tree-space metrics and network geometry](#7-discrete-tree-space-metrics-and-network-geometry) | 5 | 0 | 0 | 0 | 5 |
-| **All** | **42** | **0** | **0** | **0** | **42** |
+| [7. Discrete tree-space metrics and network geometry](#7-discrete-tree-space-metrics-and-network-geometry) | 73 | 0 | 0 | 0 | 73 |
+| **All** | **114** | **0** | **0** | **0** | **114** |
 
 <!-- END catalog:summary -->
 
@@ -54,8 +54,8 @@ consistency in
 - [ ] Billera, Holmes, Vogtmann (2001), [Geometry of the Space of Phylogenetic Trees](https://doi.org/10.1006/aama.2001.0759)
 - [ ] Amenta et al. (2007), [Approximating Geodesic Tree Distance](https://doi.org/10.1016/j.ipl.2007.02.008)
 - [ ] Kupczok, von Haeseler, Klaere (2008), [An Exact Algorithm for the Geodesic Distance Between Phylogenetic Trees](https://doi.org/10.1089/cmb.2008.0068)
-- [ ] Owen (2011), [Computing Geodesic Distances in Tree Space](https://doi.org/10.1137/090751396)
 - [ ] Owen, Provan (2011), [A Fast Algorithm for Computing Geodesic Distances in Tree Space](https://doi.org/10.1109/TCBB.2010.3)
+- [ ] Owen (2011), [Computing Geodesic Distances in Tree Space](https://doi.org/10.1137/090751396)
 - [ ] Gavryushkin, Drummond (2016), [The Space of Ultrametric Phylogenetic Trees](https://doi.org/10.1016/j.jtbi.2016.05.001)
 - [ ] Lin, Sturmfels, Tang, Yoshida (2017), [Convexity in Tree Spaces](https://doi.org/10.1137/16M1079841)
 
@@ -69,7 +69,10 @@ consistency in
 - [ ] Miller, Owen, Provan (2015), [Polyhedral Computational Geometry for Averaging Metric Phylogenetic Trees](https://doi.org/10.1016/j.aam.2015.04.002)
 - [ ] Barden, Le, Owen (2018), [Limiting Behaviour of Fréchet Means in the Space of Phylogenetic Trees](https://doi.org/10.1007/s10463-016-0582-9)
 - [ ] Willis (2019), [Confidence Sets for Phylogenetic Trees](https://doi.org/10.1080/01621459.2017.1395342)
-- [ ] Evans, Matsen (2012), [The Phylogenetic Kantorovich–Rubinstein Metric for Environmental Sequence Samples](https://doi.org/10.1111/j.1467-9868.2011.01018.x)
+- [ ] Takazawa, Sei (2022), [Maximum Likelihood Estimation of Log-Concave Densities on Tree Space](https://arxiv.org/abs/2211.12037)
+- [ ] Smith (2022), [Robust Analysis of Phylogenetic Tree Space](https://doi.org/10.1093/sysbio/syab100)
+- [ ] Penn et al. (2023), [Leaping through Tree Space: Continuous Phylogenetic Inference for Rooted and Unrooted Trees](https://doi.org/10.1093/gbe/evad213)
+- [ ] Woodman, Nye (2025), [Brownian motion, bridges and Bayesian inference in phylogenetic tree space](https://arxiv.org/abs/2506.22135)
 
 ### 3. Principal component analysis and dimensionality reduction
 
@@ -87,6 +90,7 @@ consistency in
 - [ ] Page, Yoshida, Zhang (2020), [Tropical Principal Component Analysis on the Space of Phylogenetic Trees](https://doi.org/10.1093/bioinformatics/btaa564)
 - [ ] Comăneci, Joswig (2024), [Tropical Medians by Transportation](https://doi.org/10.1007/s10107-023-01996-8)
 - [ ] Bhatt et al. (2026), [Phylogenetics in a Warm Place: Computational Aspects of the Tropical Grassmannian](https://doi.org/10.1007/s11538-026-01773-6)
+- [ ] Monod et al. (2026), [Tropical Geometry of Phylogenetic Tree Space: A statistical Perspective](https://doi.org/10.1007/s10013-026-00795-w)
 
 ### 5. Information geometry and evolutionary probability spaces
 
@@ -107,10 +111,78 @@ consistency in
 ### 7. Discrete tree-space metrics and network geometry
 
 - [ ] Robinson (1971), [Comparison of Labeled Trees with Valency Three](https://doi.org/10.1016/0095-8956(71)90020-7)
+- [ ] Robinson, Foulds (1981), [Comparison of Phylogenetic Trees](https://doi.org/10.1016/0025-5564(81)90043-2)
+- [ ] Hein et al. (1996), [On the Complexity of Comparing Evolutionary Trees](https://doi.org/10.1016/s0166-218x(96)00062-5)
 - [ ] Li, Tromp, Zhang (1996), [On the Nearest Neighbour Interchange Distance Between Evolutionary Trees](https://doi.org/10.1006/jtbi.1996.0188)
+- [ ] Rodrigues, Sagot, Wakabayashi (2001), [Some Approximation Results for the Maximum Agreement Forest Problem](https://doi.org/10.1007/3-540-44666-4_19)
 - [ ] Allen, Steel (2001), [Subtree Transfer Operations and Their Induced Metrics on Evolutionary Trees](https://doi.org/10.1007/s00026-001-8006-8)
+- [ ] Nakhleh et al. (2003), [Towards the development of computational tools for evaluating phylogenetic network reconstruction methods.](https://doi.org/10.1142/9789812776303_0030)
+- [ ] Choy et al. (2004), [Computing the Maximum Agreement of Phylogenetic Networks](https://doi.org/10.1016/j.entcs.2003.12.009)
+- [ ] Christiansen et al. (2005), [Algorithms for Computing the Quartet Distance between Trees of Arbitrary Degree](https://www.semanticscholar.org/paper/d088ceaed7e75bb22c57302eba13dca1ce1f199b)
+- [ ] Chataigner (2005), [Approximating the Maximum Agreement Forest on k trees](https://doi.org/10.1016/j.ipl.2004.11.004)
+- [ ] Nguyen, Nguyen, Sung (2005), [Fast algorithms for computing the tripartition-based distance between phylogenetic networks](https://doi.org/10.1007/s10878-006-9025-5)
 - [ ] Bordewich, Semple (2004), [On the Computational Complexity of the Rooted Subtree Prune and Regraft Distance](https://doi.org/10.1007/s00026-004-0229-z)
+- [ ] Rodrigues, Sagot, Wakabayashi (2007), [The maximum agreement forest problem: Approximation algorithms and computational experiments](https://doi.org/10.1016/j.tcs.2006.12.011)
+- [ ] Cardona et al. (2008), [A distance metric for a class of tree-sibling phylogenetic networks](https://doi.org/10.1093/bioinformatics/btn231)
+- [ ] Mailund, Nielsen, Pedersen (2009), [A Quadratic Time Algorithm for Computing the Quartet Distance between Two General Trees](https://doi.org/10.1109/ijcbs.2009.42)
+- [ ] Cardona, Rossello, Valiente (2009), [Comparison of Tree-Child Phylogenetic Networks](https://doi.org/10.1109/tcbb.2007.70270)
+- [ ] Cardona et al. (2009), [Metrics for Phylogenetic Networks I: Generalizations of the Robinson-Foulds Metric](https://doi.org/10.1109/tcbb.2008.70)
+- [ ] Cardona et al. (2009), [Metrics for Phylogenetic Networks II: Nodal and Triplets Metrics](https://doi.org/10.1109/tcbb.2008.127)
+- [ ] Nakhleh (2010), [A Metric on the Space of Reduced Phylogenetic Networks](https://doi.org/10.1109/tcbb.2009.2)
+- [ ] Cardona, Llabrés, Rosselló (2010), [Two Results on Distances for Phylogenetic Networks](https://doi.org/10.1007/978-3-642-13214-8_12)
+- [ ] Nielsen et al. (2011), [A sub-cubic time algorithm for computing the quartet distance between two general trees](https://doi.org/10.1186/1748-7188-6-15)
+- [ ] Crosby, Williams (2012), [A Fast Algorithm for Computing the Quartet Distance for Large Sets of Evolutionary Trees](https://doi.org/10.1007/978-3-642-30191-9_6)
+- [ ] Jansson, Lingas (2012), [Computing the Rooted Triplet Distance between Galled Trees by Counting Triangles](https://doi.org/10.1007/978-3-642-31265-6_31)
+- [ ] Asano et al. (2012), [Faster computation of the Robinson–Foulds distance between phylogenetic networks](https://doi.org/10.1016/j.ins.2012.01.038)
+- [ ] Sand et al. (2013), [Algorithms for Computing the Triplet Quartet Distances for Binary General Trees](https://doi.org/10.3390/biology2041189)
+- [ ] Brodal et al. (2013), [Efficient algorithms for computing the triplet and quartet distance between trees of arbitrary degree](https://doi.org/10.1137/1.9781611973105.130)
+- [ ] Whidden, Beiko, Zeh (2013), [Fixed-Parameter Algorithms for Maximum Agreement Forests](https://doi.org/10.1137/110845045)
+- [ ] Shi et al. (2014), [Algorithms for parameterized maximum agreement forest problem on multiple trees](https://doi.org/10.1016/j.tcs.2013.12.025)
+- [ ] Shi et al. (2014), [Approximation Algorithms for Maximum Agreement Forest on Multiple Trees](https://doi.org/10.1007/978-3-319-08783-2_33)
+- [ ] Cardona et al. (2014), [The Comparison of Tree-Sibling Time Consistent Phylogenetic Networks Is Graph Isomorphism-Complete](https://doi.org/10.1155/2014/254279)
+- [ ] Olver et al. (2015), [A duality based 2-approximation algorithm for maximum agreement forest](https://doi.org/10.1007/s10107-022-01790-y)
+- [ ] Whidden, Beiko, Zeh (2015), [Fixed-Parameter and Approximation Algorithms for Maximum Agreement Forests of Multifurcating Trees](https://doi.org/10.1007/s00453-015-9983-z)
+- [ ] Chen, Fan, Sze (2015), [Parameterized and approximation algorithms for maximum agreement forest in multifurcating trees](https://doi.org/10.1016/j.tcs.2014.10.031)
+- [ ] Huber et al. (2015), [Spaces of phylogenetic networks from generalized nearest-neighbor interchange operations](https://doi.org/10.1007/s00285-015-0899-7)
+- [ ] Shi et al. (2016), [Improved approximation algorithm for maximum agreement forest of two rooted binary phylogenetic trees](https://doi.org/10.1007/s10878-015-9921-7)
+- [ ] Fischer, Kelk (2016), [On the Maximum Parsimony Distance Between Phylogenetic Trees](https://doi.org/10.1007/s00026-015-0298-1)
+- [ ] Alon, Naves, Sudakov (2016), [On the Maximum Quartet Distance between Phylogenetic Trees](https://doi.org/10.1137/15m1041754)
+- [ ] Kelk et al. (2016), [Reduction rules for the maximum parsimony distance on phylogenetic trees](https://doi.org/10.1016/j.tcs.2016.07.010)
+- [ ] Huber, Moulton, Wu (2016), [Transforming phylogenetic networks: Moving beyond tree space](https://doi.org/10.1016/j.jtbi.2016.05.030)
+- [ ] Moulton, Oldman, Wu (2017), [A cubic-time algorithm for computing the trinet distance between level-1 networks](https://doi.org/10.1016/j.ipl.2017.03.002)
+- [ ] Jansson, Rajaby (2017), [A More Practical Algorithm for the Rooted Triplet Distance](https://doi.org/10.1089/cmb.2016.0185)
+- [ ] Bordewich, Linz, Semple (2017), [Lost in space? Generalising subtree prune and regraft to spaces of phylogenetic networks](https://doi.org/10.1016/j.jtbi.2017.03.032)
+- [ ] Gambette et al. (2017), [Rearrangement moves on rooted phylogenetic networks](https://doi.org/10.1371/journal.pcbi.1005611)
+- [ ] Gambette, Huber, Scholz (2017), [Uprooted Phylogenetic Networks](https://doi.org/10.1007/s11538-017-0318-x)
+- [ ] Shi et al. (2018), [A parameterized algorithm for the Maximum Agreement Forest problem on multiple rooted multifurcating trees](https://doi.org/10.1016/j.jcss.2018.03.002)
+- [ ] Francis et al. (2018), [Bounds for phylogenetic network space metrics](https://doi.org/10.1007/s00285-017-1171-0)
+- [ ] Janssen et al. (2018), [Exploring the Tiers of Rooted Phylogenetic Network Space Using Tail Moves](https://doi.org/10.1007/s11538-018-0452-0)
+- [ ] Klawitter (2018), [The SNPR neighbourhood of tree-child networks](https://doi.org/10.7155/jgaa.00472)
+- [ ] Janssen (2019), [Rearrangement operations on unrooted phylogenetic networks](https://doi.org/10.20429/tag.2019.060206)
+- [ ] Lafond et al. (2019), [The complexity of comparing multiply-labelled trees by extending phylogenetic-tree metrics](https://doi.org/10.1016/j.tcs.2018.08.006)
+- [ ] Forcey, Scalzo (2020), [Galois connections for phylogenetic networks and their polytopes](https://doi.org/10.1007/s10801-020-00974-z)
+- [ ] Fischer, Francis (2020), [How tree-based is my network? Proximity measures for unrooted phylogenetic networks](https://doi.org/10.1016/j.dam.2019.12.019)
+- [ ] Yamada, Chen, Wang (2020), [Improved Practical Algorithms for Rooted Subtree Prune and Regraft (rSPR) Distance and Hybridization Number](https://doi.org/10.1089/cmb.2019.0432)
+- [ ] Durell, Forcey (2020), [Level-1 phylogenetic networks and their balanced minimum evolution polytopes](https://doi.org/10.1007/s00285-019-01458-w)
+- [ ] Forcey, Scalzo (2020), [Phylogenetic Networks as Circuits With Resistance Distance](https://doi.org/10.3389/fgene.2020.586664)
+- [ ] Adams, Castoe (2020), [Probabilistic Species Tree Distances: Implementing the Multispecies Coalescent to Compare Species Trees Within the Same Model-Based Framework Used to Estimate Them](https://doi.org/10.1093/sysbio/syz031)
+- [ ] Klawitter (2020), [The agreement distance of unrooted phylogenetic networks](https://doi.org/10.23638/dmtcs-22-1-22)
+- [ ] Fischer, Francis (2020), [The Space of Tree-Based Phylogenetic Networks](https://doi.org/10.1007/s11538-020-00744-9)
+- [ ] Jansson et al. (2021), [Computing the Rooted Triplet Distance Between Phylogenetic Networks](https://doi.org/10.1007/s00453-021-00802-1)
+- [ ] Janssen (2021), [Heading in the right direction? Using head moves to traverse phylogenetic network space](https://doi.org/10.7155/jgaa.00559)
+- [ ] Jones, Kelk, Stougie (2021), [Maximum parsimony distance on phylogenetic trees: A linear kernel and constant factor approximation algorithm](https://doi.org/10.1016/j.jcss.2020.10.003)
+- [ ] Yakici, Ogilvie, Nakhleh (2022), [Phylogenetic Network Dissimilarity Measures That Take Branch Lengths Into Account](https://doi.org/10.1101/2022.02.22.481483)
+- [ ] Kelk, Meuwese (2023), [Agreement forests of caterpillar trees: complexity, kernelization and branching](https://arxiv.org/abs/2307.12176)
+- [ ] Landry et al. (2023), [Defining Phylogenetic Network Distances Using Cherry Operations](https://doi.org/10.1109/tcbb.2022.3162991)
+- [ ] Linz, Wicke (2023), [Exploring spaces of semi-directed phylogenetic networks](https://arxiv.org/abs/2301.10818)
+- [ ] Landry, Tremblay-savard, Lafond (2024), [A Fixed-Parameter Tractable Algorithm for Finding Agreement Cherry-Reduced Subnetworks in Level-1 Orchard Networks](https://doi.org/10.1089/cmb.2023.0317)
+- [ ] Rutecka et al. (2024), [Robinson-Foulds distance between phylogenetic networks and gene trees](https://doi.org/10.1145/3698587.3701349)
+- [ ] Mestel et al. (2024), [Split-or-decompose: Improved FPT branching algorithms for maximum agreement forests](https://arxiv.org/abs/2409.18634)
 - [ ] Moulton, Spillner (2025), [Spaces of Ranked Tree-Child Networks](https://doi.org/10.1007/s00285-025-02265-2)
+- [ ] Ribas, Pons, Ané (2026), [A μ-Distance for Semidirected Orchard Phylogenetic Networks](https://arxiv.org/abs/2605.06243)
+- [ ] Kelk, Van Iersel, Meuwese (2026), [A Kernel for the Maximum Agreement Forest Problem on Multiple Binary Phylogenetic Trees](https://doi.org/10.7155/jgaa.v30i1.3194)
+- [ ] Li, Liu, Long (2026), [Computing the Arc-Deletion Distance to Orchard Networks is NP-hard](https://arxiv.org/abs/2605.19962)
+- [ ] Reichling, van Iersel, Murakami (2026), [Metrics for classes of semi-binary phylogenetic networks using μ-representations](https://doi.org/10.1016/j.aam.2025.102953)
 
 <!-- END catalog:papers -->
 
